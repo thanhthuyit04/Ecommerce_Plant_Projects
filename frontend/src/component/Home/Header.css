@@ -1,0 +1,30 @@
+.logo{
+  width: 150px;
+  height: 100px;
+  object-fit:contain;
+  cursor: pointer;
+}
+
+.inputBox{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  border: 2px solid green;
+  border-radius: 21px;
+  overflow: hidden;
+}
+
+.inputBox > span{
+    font-family: "Roboto";
+    animation: sliding 14s linear infinite;
+    display: block;
+}
+@keyframes sliding{
+    0%{
+      transform: translateX(-70%);
+    }
+    100%{
+      transform: translateX(130%);
+    }
+  }
